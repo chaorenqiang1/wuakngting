@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style type="text/css">
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E2A38; /* 深蓝色背景，提供一个更加现代和专业的外观 */
+}
+
+
+</style>
+
+<link type="text/css" rel="stylesheet" href="css/iview1.css" />
+<link type="text/css" rel="stylesheet" href="css/skin1/style1.css" />
+<link type="text/css" rel="stylesheet" href="css/bullet.css" /> <!-- 引入弹幕CSS文件 -->
+<link rel="stylesheet" href="banniang/css/pio.css">
+<link type="text/css" rel="stylesheet" href="css/播放.css" />
+
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/raphael-min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.js"></script>
+<script type="text/javascript" src="js/iview.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#iview').iView({
+        pauseTime: 7000,
+        directionNav: false,
+        controlNav: true,
+        tooltipY: -15
+    });
+});
+</script>
+
+</head>
+<body>
+
+<div class="container">
+    <div id="iview">
+        <div data-iview:image="photos/photo1.jpg" data-iview:transition="slice-top-fade,slice-right-fade">
+            <div class="iview-caption caption1" data-x="80" data-y="200">武康庭</div>
+            <div class="iview-caption" data-x="80" data-y="275" data-transition="wipeRight">武康路376号</div>
+        </div>
+
+        <div data-iview:image="photos/photo2.jpg" data-iview:transition="zigzag-drop-top,zigzag-drop-bottom" data-iview:pausetime="3000">
+            <div class="iview-caption caption5" data-x="60" data-y="280" data-transition="wipeDown">花园住宅</div>
+            <div class="iview-caption caption6" data-x="300" data-y="350" data-transition="wipeUp">建于1928年</div>
+        </div>
+
+        <div data-iview:image="photos/photo3.jpg" data-iview:type="video" data-iview:transition="strip-right-fade,strip-left-fade">
+            <iframe src="http://player.vimeo.com/video/11475955?byline=1&amp;portrait=0" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            <div class="iview-caption caption2" data-x="450" data-y="340" data-transition="wipeRight">新古典主义风格</div>
+        </div>
+
+        <div data-iview:image="photos/photo4.jpg">
+            <div class="iview-caption caption4" data-x="50" data-y="80" data-width="110" data-transition="fade">武康庭:</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="135" data-width="160" data-transition="wipeLeft" data-easing="easeInOutElastic">占地面积600多平方米</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="192" data-width="160" data-transition="wipeLeft" data-easing="easeInOutElastic">三层砖混结构</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="249" data-width="160" data-transition="wipeLeft" data-easing="easeInOutElastic">早年是郭泰祺的私人住宅</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="306" data-width="250" data-transition="wipeLeft" data-easing="easeInOutElastic">上海早期著名电影人张翼，则在三楼住过多年</div>
+        </div>
+
+        <div data-iview:image="photos/photo5.jpg">
+            <div class="iview-caption caption7" data-x="0" data-y="0" data-width="180" data-height="480" data-transition="wipeRight">
+                <h3>郭泰祺</h3>
+                <p>湖北武穴人<br><br>1888～1952年，任国府外交部部长、外交委员会主席<br><br>联合国安理会首任中国首席代表</p>
+            </div>
+        </div>
+
+        <div data-iview:image="photos/photo6.jpg">
+
+        </div>
+        <div data-iview:image="photos/photo7.jpg" data-iview:transition="slice-top-fade,slice-right-fade">
+            <div class="iview-caption caption1" data-x="80" data-y="280">现为商业体武康庭</div>
+        </div>
+
+        <div data-iview:image="photos/photo8.jpg" data-iview:transition="zigzag-drop-top,zigzag-drop-bottom" data-iview:pausetime="3000">
+            <div class="iview-caption caption5" data-x="60" data-y="280" data-transition="wipeDown">武康庭素有小欧洲之称</div>
+        </div>
+
+        <div data-iview:image="photos/photo9.jpg" data-iview:type="video" data-iview:transition="strip-right-fade,strip-left-fade">
+            <iframe src="http://player.vimeo.com/video/11475955?byline=1&amp;portrait=0" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            <div class="iview-caption caption2" data-x="450" data-y="340" data-transition="wipeRight">万国文化</div>
+
+        </div>
+
+        <div data-iview:image="photos/photo10.jpg">
+
+
+        </div>
+
+        <div data-iview:image="photos/photo11.jpg">
+            <div class="iview-caption caption7" data-x="0" data-y="0" data-width="180" data-height="300" data-transition="wipeRight">
+                <h3>“武康庭”提倡的理念是优雅生活</h3>
+                <p>经过18年打造，如今“武康庭”在保留其历史文化底蕴的基础上，注入了新的生命活力<br><br>三幢不同风格的建筑经改造后，形成了一个和谐的时尚园区，与武康路街区融为一体。“武康庭”成为了上海文创园区的一张名牌，也是历史风貌街区慢生活的精粹之处。</p>
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+</div>
+    </div>
+
+    <audio id="backgroundMusic1" src="audio/武康庭1.wav"></audio>
+    <audio id="backgroundMusic2" src="audio/武康庭2.wav"></audio>
+    <div id="clickToPlay">点击开始旅行</div>
+
+<div class="danmaku-container"></div>
+<div class="pio-container left">
+    <div class="pio-action"></div>
+    <canvas id="pio" width="300" height="400"></canvas>
+</div>
+
+<script type="text/javascript" src="js/bullet.js"></script> <!-- 引入弹幕JavaScript文件 -->
+<script src="banniang/js/pio.js"></script>
+<script src="banniang/js/l2d.js"></script>
+<script src="js/播放.js"></script>
+<script>
+    var pio = new Paul_Pio({
+    "mode": "fixed",
+    "tips": true,
+    "hidden": true,
+    "content": {
+        "welcome": ["欢迎来旅行！", ],
+    },
+    "model": [
+     "banniang/live2d-widget-models/live2d-widget-model-shizuku/assets/shizuku.model.json",
+
+    ]
+});
+</script>
+
+</body>
+</html>
